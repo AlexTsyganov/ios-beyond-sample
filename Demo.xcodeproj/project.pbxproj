@@ -22,6 +22,9 @@
 		D74ADE702627114C00DFDCD9 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE6F2627114C00DFDCD9 /* Account.swift */; };
 		D74ADE75262711BE00DFDCD9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE74262711BE00DFDCD9 /* Service.swift */; };
 		D74ADE7A2627125700DFDCD9 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE792627125700DFDCD9 /* NetworkClient.swift */; };
+		D74ADE7F2627190100DFDCD9 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE7E2627190100DFDCD9 /* AccountViewModel.swift */; };
+		D74ADE8426271B2200DFDCD9 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE8326271B2200DFDCD9 /* AccountViewController.swift */; };
+		D74ADE8D26271D0E00DFDCD9 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE8C26271D0E00DFDCD9 /* AccountTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +71,9 @@
 		D74ADE6F2627114C00DFDCD9 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		D74ADE74262711BE00DFDCD9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		D74ADE792627125700DFDCD9 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		D74ADE7E2627190100DFDCD9 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		D74ADE8326271B2200DFDCD9 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		D74ADE8C26271D0E00DFDCD9 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		FD7C6A1D96623203506CD8E8 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +180,7 @@
 		D74ADE6B2627104F00DFDCD9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D74ADE8826271B2B00DFDCD9 /* Accounts */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 		D74ADE6C2627106B00DFDCD9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D74ADE7E2627190100DFDCD9 /* AccountViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -200,6 +208,15 @@
 				D74ADE792627125700DFDCD9 /* NetworkClient.swift */,
 			);
 			path = Networkging;
+			sourceTree = "<group>";
+		};
+		D74ADE8826271B2B00DFDCD9 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				D74ADE8326271B2200DFDCD9 /* AccountViewController.swift */,
+				D74ADE8C26271D0E00DFDCD9 /* AccountTableViewCell.swift */,
+			);
+			path = Accounts;
 			sourceTree = "<group>";
 		};
 		DDBC8F5A7C8E5574D75AB0A8 /* Frameworks */ = {
@@ -416,11 +433,14 @@
 			files = (
 				D74ADE702627114C00DFDCD9 /* Account.swift in Sources */,
 				0DC9C8F62626FF30003DFBCF /* ViewController.swift in Sources */,
+				D74ADE7F2627190100DFDCD9 /* AccountViewModel.swift in Sources */,
+				D74ADE8D26271D0E00DFDCD9 /* AccountTableViewCell.swift in Sources */,
 				0DC9C8F22626FF30003DFBCF /* AppDelegate.swift in Sources */,
 				0DC9C8FC2626FF30003DFBCF /* Demo.xcdatamodeld in Sources */,
 				D74ADE7A2627125700DFDCD9 /* NetworkClient.swift in Sources */,
 				0DC9C8F42626FF30003DFBCF /* SceneDelegate.swift in Sources */,
 				D74ADE75262711BE00DFDCD9 /* Service.swift in Sources */,
+				D74ADE8426271B2200DFDCD9 /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
