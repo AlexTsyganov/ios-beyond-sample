@@ -19,6 +19,12 @@
 		545E6427E1AC88B75B149A66 /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AE054270707D9FEAFAE877 /* Pods_Demo.framework */; };
 		9556A92F9DFD298031453FC8 /* Pods_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F4E078A48EB12469296E38 /* Pods_DemoTests.framework */; };
 		9BFCAEE47FBE804D551D243D /* Pods_Demo_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B128D093EB7A86998DD326 /* Pods_Demo_DemoUITests.framework */; };
+		D74ADE702627114C00DFDCD9 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE6F2627114C00DFDCD9 /* Account.swift */; };
+		D74ADE75262711BE00DFDCD9 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE74262711BE00DFDCD9 /* Service.swift */; };
+		D74ADE7A2627125700DFDCD9 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE792627125700DFDCD9 /* NetworkClient.swift */; };
+		D74ADE7F2627190100DFDCD9 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE7E2627190100DFDCD9 /* AccountViewModel.swift */; };
+		D74ADE8426271B2200DFDCD9 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE8326271B2200DFDCD9 /* AccountViewController.swift */; };
+		D74ADE8D26271D0E00DFDCD9 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74ADE8C26271D0E00DFDCD9 /* AccountTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +68,12 @@
 		8A9E4E8FBED043C4DA895775 /* Pods-Demo-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-Demo-DemoUITests/Pods-Demo-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A48472B993CCFA9F071126B0 /* Pods-Demo-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo-DemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Demo-DemoUITests/Pods-Demo-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C80BAB02157988F2E702751F /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		D74ADE6F2627114C00DFDCD9 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		D74ADE74262711BE00DFDCD9 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		D74ADE792627125700DFDCD9 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		D74ADE7E2627190100DFDCD9 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		D74ADE8326271B2200DFDCD9 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		D74ADE8C26271D0E00DFDCD9 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		FD7C6A1D96623203506CD8E8 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +130,10 @@
 		0DC9C8F02626FF30003DFBCF /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D74ADE6E2627111C00DFDCD9 /* Networkging */,
+				D74ADE6D2627107A00DFDCD9 /* Model */,
+				D74ADE6C2627106B00DFDCD9 /* ViewModel */,
+				D74ADE6B2627104F00DFDCD9 /* Views */,
 				0DC9C8F12626FF30003DFBCF /* AppDelegate.swift */,
 				0DC9C8F32626FF30003DFBCF /* SceneDelegate.swift */,
 				0DC9C8F52626FF30003DFBCF /* ViewController.swift */,
@@ -158,8 +174,49 @@
 				07F2D41E0F6FFAA3F253F02C /* Pods-DemoTests.debug.xcconfig */,
 				3453021F46B9AD944B3EF46B /* Pods-DemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D74ADE6B2627104F00DFDCD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D74ADE8826271B2B00DFDCD9 /* Accounts */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D74ADE6C2627106B00DFDCD9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D74ADE7E2627190100DFDCD9 /* AccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D74ADE6D2627107A00DFDCD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D74ADE6F2627114C00DFDCD9 /* Account.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D74ADE6E2627111C00DFDCD9 /* Networkging */ = {
+			isa = PBXGroup;
+			children = (
+				D74ADE74262711BE00DFDCD9 /* Service.swift */,
+				D74ADE792627125700DFDCD9 /* NetworkClient.swift */,
+			);
+			path = Networkging;
+			sourceTree = "<group>";
+		};
+		D74ADE8826271B2B00DFDCD9 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				D74ADE8326271B2200DFDCD9 /* AccountViewController.swift */,
+				D74ADE8C26271D0E00DFDCD9 /* AccountTableViewCell.swift */,
+			);
+			path = Accounts;
 			sourceTree = "<group>";
 		};
 		DDBC8F5A7C8E5574D75AB0A8 /* Frameworks */ = {
@@ -374,10 +431,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74ADE702627114C00DFDCD9 /* Account.swift in Sources */,
 				0DC9C8F62626FF30003DFBCF /* ViewController.swift in Sources */,
+				D74ADE7F2627190100DFDCD9 /* AccountViewModel.swift in Sources */,
+				D74ADE8D26271D0E00DFDCD9 /* AccountTableViewCell.swift in Sources */,
 				0DC9C8F22626FF30003DFBCF /* AppDelegate.swift in Sources */,
 				0DC9C8FC2626FF30003DFBCF /* Demo.xcdatamodeld in Sources */,
+				D74ADE7A2627125700DFDCD9 /* NetworkClient.swift in Sources */,
 				0DC9C8F42626FF30003DFBCF /* SceneDelegate.swift in Sources */,
+				D74ADE75262711BE00DFDCD9 /* Service.swift in Sources */,
+				D74ADE8426271B2200DFDCD9 /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -538,7 +601,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
